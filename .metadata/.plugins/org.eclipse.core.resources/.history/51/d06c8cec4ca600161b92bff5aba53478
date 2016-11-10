@@ -1,0 +1,15 @@
+  
+    mainApp.controller('loginController', ['$scope', function($scope) {
+	
+	$scope.students=studentcollection;
+	
+ }]);
+ 
+ mainApp.controller('helpController',['$scope', function($scope) {
+	 
+	  $scope.addStudent = function()
+	 {
+		 studentcollection.push({ name: $scope.student.name, city: $scope.student.city });
+	 } 
+ }]);
+  

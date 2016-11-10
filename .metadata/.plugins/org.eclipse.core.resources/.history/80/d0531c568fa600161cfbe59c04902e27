@@ -1,0 +1,64 @@
+var mainApp = angular.module("mainApp", ['ngRoute']);
+mainApp.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+    when('/home', {
+      templateUrl: 'maincontent.jsp',
+      controller: 'HomeController'
+    }).
+    when('/login', {
+      templateUrl: 'login.jsp',
+      controller: 'LoginController'
+    }).
+    when('/trainingprogram', {
+        templateUrl: 'trainingprogram.jsp',
+        controller: 'TrainingProgramController'
+      }).
+      
+      when('/help', {
+          templateUrl: 'help.jsp',
+          controller: 'HelpController'
+        }).
+      when('/adminprofile', {
+            templateUrl: 'adminprofile.jsp',
+            controller: 'AdminProfileController'
+          }).
+      when('/employeecreate', {
+              templateUrl: 'employeecreate.jsp',
+              controller: 'EmployeeCreateController'
+            }).
+      when('/employeeview', {
+                templateUrl: 'employeeview.jsp',
+                controller: 'EmployeeViewController'
+              }).
+       when('/employeesearch', {
+                  templateUrl: 'employeesearch.jsp',
+                  controller: 'EmployeeSearchController'
+                }).
+      when('/trainercreate', {
+               templateUrl: 'trainercreate.jsp',
+               controller: 'TrainerSearchController'
+       }).
+       when('/trainerview', {
+           templateUrl: 'trainerview.jsp',
+           controller: 'TrainerViewController'
+       }).
+       when('/trainersearch', {
+           templateUrl: 'trainersearch.jsp',
+           controller: 'TrainerSearchController'
+       }).
+       when('/batchcreate', {
+           templateUrl: 'batchcreate.jsp',
+           controller: 'BatchCreateController'
+       }).
+       
+       when('/batchview', {
+           templateUrl: 'batchview.jsp',
+           controller: 'BatchViewController'
+       }).
+                
+    otherwise({
+      redirectTo: '/employeecreate'
+    });
+  }
+]);

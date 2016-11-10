@@ -1,0 +1,57 @@
+
+		<div class="nav-main-container">
+			<div class="container_24">
+				<div class="grid_24">
+					<ul id="topmenunav" class="nav-main">
+						
+						<li><a rel="employee" href="#employeecreate">Employee<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#employeecreate">Add Employee</a></li>
+								<li><a href="#employeeview">View All</a></li>
+								<li><a href="#employeesearch">Search Employee</a></li>
+								
+							</ul>
+						</li>
+						
+						<li><a rel="trainer" href="#trainercreate">Trainer<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#trainercreate">Add Trainer</a></li>
+								<li><a href="#trainerview">View Trainer</a></li>
+								<li><a href="#trainersearch">Search Trainer</a></li>
+								
+							</ul>
+						</li>
+						<li><a rel="batch" href="#batchcreate">Batch<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#batchcreate">Create Batch</a></li>
+								<li><a href="#batchview">View Batches</a></li>
+								<li><a href="#batchsearch">Search Batch</a></li>
+								<li><a href="#batchemployeeadd">Add Employee To Batch</a></li>
+								
+							</ul>
+						</li>
+						<li><a rel="session" href="#sessioncreate">Session<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#sessioncreate">Create Session</a></li>
+								<li><a href="#sessionview">View All Session</a></li>
+								<li><a href="#sessionsearch">Search Session</a></li>
+								
+							</ul>
+						</li>
+						
+						
+						<li><a rel="logout" href="#">Logout</a></li>
+						
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>

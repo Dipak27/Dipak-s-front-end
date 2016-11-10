@@ -1,0 +1,95 @@
+'use strict';
+ 
+mainApp.controller('SessionController', ['$scope', 'SessionService', function($scope, SessionService) {
+   
+    this.session={session_id:null,batch_id:null,tech_id:null,trainer_id:null,session_date:'',session_start_time:'',session_end_time:'',session_conducted:'',topic_covered:'',created:'2016-10-11',created_by:'1',modified:'',modified_by:'2016-10-11'};
+    this.sessions=[];
+ 
+    this.submit = submit;
+    this.edit = edit;
+    this.remove = remove;
+    this.search=search;
+    this.reset = reset;
+ 
+ 
+    fetchAllSessions();
+ 
+    function fetchAllSessions(){
+        SessionService.fetchAllSessions()
+            .then(
+            function(d) {
+            	this.sessions = d;
+            },
+            function(errResponse){
+                console.error('Error while fetching Users');
+            }
+        );
+    }
+ 
+    function createSession(session){
+    	SessionService.createSession(session)
+            .then(
+            		fetchAllSessions,
+            function(errResponse){
+                console.error('Error while creating User');
+            }
+        );
+    }
+ 
+    function updateSession(session, session_id){
+    	SessionService.updateSession(session, session_id)
+            .then(
+            		fetchAllSessions,
+            function(errResponse){
+                console.error('Error while updating Session');
+            }
+        );
+    }
+ 
+    function deleteSession(emp_id){
+    	SessionService.deleteEmployee(emp_id)
+            .then(
+            		fetchAllSessions,
+            function(errResponse){
+                console.error('Error while deleting User');
+            }
+        );
+    }
+    
+
+    
+ 
+    function edit(emp_id){
+        console.log('id to be edited', emp_id);
+        for(var i = 0; i < this.employees.length; i++){
+            if(this.employees[i].emp_id === emp_id) {
+            	this.employee = angular.copy(this.employees[i]);
+                break;
+            }
+        }
+    }
+ 
+    function remove(emp_id){
+        console.log('id to be deleted', emp_id);
+        if(this.employee.emp_id === emp_id) {//clean form if the user to be deleted is shown there.
+            reset();
+        }
+        deleteEmployee(emp_id);
+    }
+    function submitsearch(emp_id){
+        console.log('id to be edited', emp_id);
+        for(var i = 0; i < this.employees.length; i++){
+            if(this.employees[i].emp_id === emp_id) {
+            	this.employee = angular.copy(this.employees[i]);
+                break;
+            }
+        }
+    }
+ 
+    function reset(){
+    	this.employee={emp_id:null,emp_name:'',emp_email_id:'',emp_password:'Cybage@123',emp_location:'',created:'2016-10-11',created_by:'1',modified:'',modified_by:'2016-10-11'};
+        
+        $scope.empfrm.$setPristine(); //reset Form
+    }
+ 
+}]);

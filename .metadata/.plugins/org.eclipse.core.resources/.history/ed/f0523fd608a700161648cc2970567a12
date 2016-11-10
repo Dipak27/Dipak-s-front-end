@@ -1,0 +1,134 @@
+	<!-- CONTENTS START -->
+	
+		<div class="container_24">
+			<div class="grid_24">
+			
+				<div class="contents">
+				
+					<div class="padding_20">
+						<h1>Employee</h1>
+					</div>
+						<div class="grid_6 alpha">
+						
+								<div class="padding_20 text-justify" ng-controller="EmployeeController as emp" >
+									<form ng-submit="myMethod()">
+									<table class="form-table" style="width:auto">
+									
+
+                        					<tr>
+                        						<td><input type="hidden" ng-model="emp.employee.empId"></td>
+                        					</tr>
+                        					<tr>
+												<th>
+														Employee Name
+												</th>
+												<td>
+													<input id="employeename" type="text"  class="validate[required]" ng-model="emp.employee.empName" style="width:120%" placeholder="Enter Employee Name" value=""  />
+												</td>
+																	
+											</tr>
+											
+												<tr>
+												<th>
+														Employee emailId
+												</th>
+												<td>
+													<input id="employeeemail" type="text"  class="validate[required]" ng-model="emp.employee.empEmailId" style="width:120%" placeholder="Enter new email id" value=""  />
+												</td>
+																	
+											</tr>
+                        					
+										<tr>
+											<th>
+												Employee Job Location
+											</th>
+											<td>
+												<select id="select1"  class="validate[required]" ng-model="employee.empLocation" style="width:120%"  >
+													<option value="null">----Select-----</option>
+                                        			<option value="pune">Pune</option>
+                                        			<option value="hyderabad">Hyderabad</option>
+                                        			<option value="gandhinagar">Gandinagar</option>
+
+												</select>
+											</td>
+										</tr>
+										
+										<tr>
+											<th>
+												&nbsp;
+											</th>
+											<td>
+												<input id="Submit1" type="submit" value="Sumbit"  />
+											</td>
+										</tr>
+										
+									</table>
+								</form>
+							</div>
+							
+						</div>	
+			
+						<div class="grid_28 omega">
+						
+							<div class="padding_20 text-justify" ng-controller="">
+								<form id="frmMain"  class="frmMain" action="#" method="post">
+									<table class="form-table" style="width:auto">
+									
+											<tr>
+												<th>
+													Select By Employee Id
+												</th>
+												<td><input type="text" class="validate[required]" name="title" style="width:120%" value=""></td>
+											
+											</tr>
+											
+										<tr>
+											<th>
+												&nbsp;
+											</th>
+											<td>
+												<input id= "Submit1" type="submit" value="Submit"/>
+												<input id="Reset1" type="reset" value="Reset" onclick="this.form.clear();" />
+										</td>
+										</tr>
+											
+											
+												<table border='0' width='100%' class='table11'>
+												<tr>
+														<th> Id</th>
+														<th> Name</th>
+														<th>Email Id</th>
+														<th>Location</th>
+														
+														
+												</tr>
+											
+														   	
+													<tr>
+														
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														
+														
+													
+														</tr>
+												
+												     </table>
+										
+											
+									</table>
+								</form>	
+							</div>
+						
+						</div>
+						
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+
+		<!-- CONTENTS END -->

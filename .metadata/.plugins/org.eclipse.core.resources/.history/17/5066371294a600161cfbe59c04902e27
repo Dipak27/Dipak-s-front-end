@@ -1,0 +1,155 @@
+	<!-- CONTENTS START -->
+		<div class="container_24">
+			<div class="grid_24">
+				<div class="contents">
+					<div class="padding_20">
+						
+					</div>
+						<div class="grid_6 alpha">
+							<div class="padding_20">
+								<div class="accordion nav-sidebar">
+									<h3>Employee</h3>
+										<div>
+											<ul>
+													<li><a href="#employeecreate">Add Employee</a></li>
+													<li><a href="#employeeview">View Employees</a></li>
+													<li><a href="#employeesearcg">Search Employee</a></li>
+								
+								
+											</ul>
+										</div>
+										
+								</div>
+							</div>
+						</div>	
+			
+						<div class="grid_18 omega">
+						 &nbsp;&nbsp;<h2>Registration</h2>
+							<div class="padding_20 text-justify">
+								<form id="frmMain" action="#" method="post">
+									<table class="form-table" style="width:auto">
+									
+										<%
+									 
+    									try{
+    											
+    											Class.forName("com.mysql.jdbc.Driver");
+												Connection connection =DriverManager.getConnection("jdbc:mysql://localhost:3306/final_database","root","root");
+
+       											Statement statement = connection.createStatement() ;
+
+       											resultset =statement.executeQuery("select * from zone") ;
+       											
+       											
+       										
+											%>
+											<tr>
+												<th>
+													Select Zone
+												</th>
+												<td>
+													<select onchange= "showUser(this.value)"  name="zone" class='validate[required]' style="width:120%">					
+														<option value= "null">----------Select----------</option>
+											
+														
+												
+													   	<% while(resultset.next()){ %>
+													   	
+													   
+													    <option value="<%= resultset.getInt(1) %>">
+											           
+											            <%= resultset.getString(2)%>
+											            </option>
+											        	<% } %>
+													</select>
+												</td>
+											</tr>
+											
+											<tr>
+												<th>
+														Select Ward
+													</th>
+											<td>
+												<div id="zone">
+													<select name="ward" class='validate[required]' style="width:120%" >
+														<option value=\"null\">
+													----------Select----------
+														</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												&nbsp;
+											</th>
+											<td>
+												<input id= "Submit1" type="submit" value="Submit"/>
+												<input id="Reset1" type="reset" value="Reset" onclick="this.form.clear();" />
+										</td>
+										</tr>
+											
+											<%
+												//int w=Integer.parseInt(request.getParameter("ward"));
+											String ws=request.getParameter("ward");
+											resultset1 =statement.executeQuery("select * from hospital where wardid = '"+ws+"'") ;
+											if(resultset1.next())
+											{
+												%>
+												<table border='0' width='100%' class='table11'>
+												<tr>
+														<th>Hospital Name</th>
+														<th>Registration Number</th>
+														<th>Address</th>	
+														<th>Contact Number</th>
+												</tr>
+												
+												<% while(resultset1.next()){ %>
+														   	
+													<tr>
+															<td><%= resultset1.getString(6)%></td>
+															<td><%= resultset1.getInt(5)%> </td>
+															<td><%= resultset1.getString(8)%></td>
+															<td><%= resultset1.getString(7)%>  </td>
+													</tr>
+														    	
+												           
+												            
+												        	<% } %>
+												     </table>
+												<%} 
+												else
+												{
+												%>
+												<script type='text/javascript'>alert('Records Not Found')</script>	
+												
+												<%} %>
+												
+											
+											<%
+       										 
+       											}
+        													catch(Exception e)
+        												{
+             												out.println("wrong entry"+e);
+        												}
+										
+											%>
+														
+														
+														
+														
+														
+
+									</table>
+								</form>
+							</div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+
+		<!-- CONTENTS END -->

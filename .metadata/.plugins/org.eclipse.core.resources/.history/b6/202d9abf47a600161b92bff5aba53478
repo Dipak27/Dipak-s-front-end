@@ -1,0 +1,19 @@
+  
+      mainApp.config(['$routeProvider', function($routeProvider) {
+          $routeProvider.
+          
+          when('/index', {
+             templateUrl: 'index.jsp',
+             controller: 'indexController'
+          }).
+          
+          when('/viewStudents', {
+             templateUrl: 'viewStudents.htm',
+             controller: 'ViewStudentsController'
+          }).
+          
+          otherwise({
+             redirectTo: '/addStudent'
+          });
+       }]);
+       

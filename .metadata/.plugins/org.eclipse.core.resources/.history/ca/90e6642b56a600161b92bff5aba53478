@@ -1,0 +1,18 @@
+  
+    mainApp.controller('loginController', ['$scope', function($scope) {
+	
+	
+	
+ }]);
+    
+    mainApp.controller('trainingprogramController', ['$scope', function($scope) {
+    	
+    	
+    	
+     }]);
+    
+ mainApp.controller('helpController',['$scope', function($scope) {
+	 
+	  
+ }]);
+  

@@ -1,0 +1,80 @@
+	<!-- CONTENTS START -->
+		<div class="container_24">
+			<div class="grid_24">
+				<div class="contents">
+					<div class="padding_20">
+						
+					</div>
+						<div class="grid_6 alpha">
+							<div class="padding_20">
+								<div class="accordion nav-sidebar">
+									<h3>Employee</h3>
+										<div>
+											<ul>
+													<li><a href="#employeecreate">Add Employee</a></li>
+													<li><a href="#employeeview">View Employees</a></li>
+													<li><a href="#employeesearcg">Search Employee</a></li>
+								
+								
+											</ul>
+										</div>
+										
+								</div>
+							</div>
+						</div>	
+			
+						<div class="grid_18 omega">
+						 &nbsp;&nbsp;<h2>Registration</h2>
+							<div class="padding_20 text-justify">
+								<form id="frmMain" action="#" method="post">
+									<table class="form-table" style="width:auto">
+									
+                        					<tr>
+											<th>
+													Employee Name
+											</th>
+											<td>
+												<input id="employeename" type="text"  class="validate[required]" name="employeename" style="width:120%" placeholder="Enter Employee Name" value=""  />
+											</td>
+																	
+										</tr>
+                        					
+										<tr>
+											<th>
+												Aadhar Card Number
+											</th>
+											<td>
+												<input id="uid" type="text"  class="validate[required]" name="uid" style="width:120%" placeholder="Aadhar Card Number" value=""  />
+											</td>
+																
+										</tr>
+										<tr>
+											<th>
+						    					Address
+											</th>
+											<td>
+													<textarea id="TextArea1" class="validate[required]" class="validate[maxSize[200]]" style="width:160%" cols="20" rows="3"  name="address" name="address" placeholder="As mentioned in Aadhar Card" value="" ></textarea>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												&nbsp;
+											</th>
+											<td>
+												<input id="Submit1" type="submit" value="Sumbit"  />
+												<input id="Reset1" type="reset" value="Reset" onclick="this.form.clear();" />
+											</td>
+										</tr>
+										
+									</table>
+								</form>
+							</div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+
+		<!-- CONTENTS END -->

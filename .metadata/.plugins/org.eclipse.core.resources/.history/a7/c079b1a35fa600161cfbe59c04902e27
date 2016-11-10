@@ -1,0 +1,27 @@
+
+var studentcollection = [
+					{name:'dipak',city:'Aurangabad',age:25},
+					{name:'Sameer',city:'Latur',age:23},
+					{name:'Avi',city:'Pune',age:24},
+					{name:'Ram',city:'Mumbau',age:28},
+					{name:'Ravi',city:'Mumbau',age:27}
+			   ];
+
+
+			   
+ mainApp.controller('ViewStudentsController', ['$scope', function($scope) {
+	
+	$scope.students=studentcollection;
+	
+ }]);
+ 
+ mainApp.controller('AddStudentController',['$scope', function($scope) {
+	 
+	  $scope.addStudent = function()
+	 {
+		 studentcollection.push({ name: $scope.student.name, city: $scope.student.city });
+	 } 
+ }]);
+ 
+
+	

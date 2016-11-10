@@ -1,0 +1,80 @@
+<!-- CONTENTS START -->
+		<div class="container_24">
+			<div class="grid_24">
+				<div class="contents">
+					<div class="padding_20">
+						
+					</div>
+						<div class="grid_6 alpha">
+							<div class="padding_20">
+								<div class="accordion nav-sidebar">
+									<h3>Complaints</h3>
+										<div>
+											<ul>
+													<li><a href="complaint.php">Register Complaint</a></li>
+													<li><a href="complaintstatus.php">Complaint Status</a></li>
+													<li><a href="complaintfeed.php">Feedback</a></li>
+													<li><a href="complaintview.php">Complaint Summary</a></li>
+								
+								
+											</ul>
+										</div>
+										
+								</div>
+							</div>
+						</div>	
+			
+						<div class="grid_18 omega">
+						 &nbsp;&nbsp;<h2>Hospital</h2>
+							<div class="padding_20 text-justify">
+								<form id="frmMain" action="#" method="post">
+									<table class="form-table" style="width:auto">
+									
+										
+											<tr>
+												<th>
+													Select Zone
+												</th>
+												<td>
+													<select onchange= "showUser(this.value)"  name="zone">					
+														
+													</select>
+												</td>
+											</tr>
+											
+											<tr>
+												<th>
+														Select Ward
+												</th>
+													<td>
+														<div id="zone">
+															<select name="ward" >
+																	<option value=\"null\">----------Select----------</option>
+															</select>
+														</div>
+													</td>
+										</tr>
+										
+										<tr>
+											<th>
+												&nbsp;
+											</th>
+											<td>
+												<input id= "Submit1" type="submit" value="Submit"/>
+												<input id="Reset1" type="reset" value="Reset" onclick="this.form.clear();" />
+										</td>
+										</tr>
+											
+												
+														
+
+									</table>
+								</form>
+							</div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>

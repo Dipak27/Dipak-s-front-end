@@ -1,0 +1,57 @@
+
+		<div class="nav-main-container">
+			<div class="container_24">
+				<div class="grid_24">
+					<ul id="topmenunav" class="nav-main">
+						
+						<li><a rel="employee" href="#">Employee<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#">Add Employee</a></li>
+								<li><a href="#">View All</a></li>
+								<li><a href="#">Search Employee</a></li>
+								
+							</ul>
+						</li>
+						
+						<li><a rel="trainer" href="#">Trainer<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#">Add Trainer</a></li>
+								<li><a href="#">View Trainer</a></li>
+								<li><a href="#">Search Trainer</a></li>
+								
+							</ul>
+						</li>
+						<li><a rel="batch" href="#">Batch<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#">Create Batch</a></li>
+								<li><a href="#">View Batches</a></li>
+								<li><a href="#">Search Batch</a></li>
+								<li><a href="#">Add Employee To Batch</a></li>
+								
+							</ul>
+						</li>
+						<li><a rel="session" href="#">Session<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#">Create Session</a></li>
+								<li><a href="#">View All Session</a></li>
+								<li><a href="#">Search Session</a></li>
+								
+							</ul>
+						</li>
+						
+						
+						<li><a rel="logout" href="#">Logout</a></li>
+						
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>

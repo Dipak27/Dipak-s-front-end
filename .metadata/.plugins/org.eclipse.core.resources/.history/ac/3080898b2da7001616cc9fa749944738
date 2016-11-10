@@ -1,0 +1,38 @@
+package com.project.springmvc.dao;
+
+import java.util.List;
+import org.hibernate.Query;
+import org.springframework.stereotype.Repository;
+import com.project.springmvc.model.Employee;
+
+@Repository("employeeDao")
+public class EmployeeDaoImpl extends AbstractDao<Integer,Employee> implements EmployeeDao{
+
+	public void addEmployee(Employee employee) throws Exception {
+		persist(employee);		
+	}
+
+	public Employee getEmployeeById(Integer id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Employee> getEmployeeList() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void deleteEmployee(Integer id) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Employee employeeAuthentication(String uname, String pass) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	
+}

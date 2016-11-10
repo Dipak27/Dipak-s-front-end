@@ -1,0 +1,65 @@
+
+	<div class="nav-main-container">
+			<div class="container_24">
+				<div class="grid_24">
+					<ul id="topmenunav" class="nav-main">
+						<li><a rel="home" href="#home">Home</a></li>
+						<li><a rel="login" href="#login">Login</a></li>
+						<li><a rel="trainingprogram" href="#trainingprogram">Training Program</a></li>
+						<li><a rel="help" href="#help">Help</a></li>
+						
+						
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		--
+		<div class="nav-main-container">
+			<div class="container_24">
+				<div class="grid_24">
+					<ul id="topmenunav" class="nav-main">
+						
+						<li><a rel="employee" href="#">Employee<span 				
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="#">Register</a></li>
+								<li><a href="#">View All</a></li>
+								<li><a href="#">Search</a></li>
+								
+							</ul>
+						</li>
+						<li><a rel="city" href="">Citizen's Services<span class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="hospitalview.jsp">Hospitals</a></li>
+								<li><a href="bloodbankview.jsp">Blood Banks</a></li>
+								<li><a href="schoolview.jsp">Schools</a></li>
+								<li><a href="collageview.jsp">colleges</a></li>
+								<li><a href="ambulanceview.jsp">Ambulanace</a></li>
+								<li><a href="policestationview.jsp">Police Stations</a></li>
+								<li><a href="officeview.jsp">Government Offices</a></li>
+							</ul>
+						</li>
+						
+						<li><a rel="entertainment" href="">Entertainments<span 
+
+							class="icon">&#9662;</span></a>
+							<ul>
+								<li><a href="dramtheatreview.jsp">Drama Theatres</a></li>
+								<li><a href="cinemaview.jsp">Cinema Halls</a></li>
+								<li><a href="lakeview.jsp">Lakes</a></li>
+								<li><a href="hotelview.jsp">Hotels</a></li>
+								<li><a href="shoppingview.jsp">Shopping Malls</a></li>
+								<li><a href="gardenview.jsp">Gardens</a></li>
+								<li><a href="sportview.jsp">Sports</a></li>
+							</ul>
+						</li>
+						<li><a rel="contact" href="contact-us.jsp">Contact Us</a></li>
+						<li><a rel="help" href="help.html">Help</a></li>
+						
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>

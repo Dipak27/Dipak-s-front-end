@@ -1,0 +1,230 @@
+	<!-- CONTENTS START -->
+	
+	<script>
+	mainApp.controller('myCtrl', function($scope, $http) {
+		$scope.msg="hello";
+		$scope.employee={empId:null,empEmailId:"",empName:"",empLocation:""};
+		$scope.fetchData=function()
+		{
+			 $http.get("http://localhost:8808/TrainingManagementSystem/employee/list")
+			  .then(function(response) {
+				  alert("response called...");
+			      $scope.myWelcome = response.data;
+			  });	
+		}
+		 $scope.myMethod=function(){
+			alert("method called...");
+			 $http.post("http://localhost:8808/TrainingManagementSystem/employee/create/",$scope.employee)
+			  .then(function(response) {
+				  alert("response called...");
+				  $scope.fetchData();
+			      $scope.myWelcome = response.data;
+			  });
+		}  
+		
+	 
+	});
+	
+	</script>
+		<div class="container_24">
+			<div class="grid_24">
+			
+				<div class="contents">
+				<h1>Welcome</h1>
+					<div class="padding_20">
+						
+					</div>
+						<div class="grid_6 alpha">
+						
+							<div class="padding_20">
+							
+								<div class="padding_20 text-justify" ng-controller="">
+								<form ng-submit="myMethod()">
+									<table class="form-table" style="width:auto">
+									
+
+                        					<tr>
+                        						<td><input type="hidden" ng-model="batch.batchId"></td>
+                        					</tr>
+                        					<tr>
+												<th>
+														Session Name
+												</th>
+												<td>
+													<input id="batchname" type="text"  class="validate[required]" ng-model="employee.empName" style="width:120%" placeholder="Enter Employee Name" value=""  />
+												</td>
+																	
+											</tr>
+											
+												<tr>
+												<th>
+														Batch Start Date
+												</th>
+												<td>
+													<input id="batchstartdate" type="date"  class="validate[required]" ng-model="employee.empEmailId" style="width:120%" placeholder="Enter new email id" value=""  />
+												</td>
+																	
+											</tr>
+												<tr>
+												<th>
+														Batch End Date
+												</th>
+												<td>
+													<input id="batchenddate" type="date"  class="validate[required]" ng-model="employee.empEmailId" style="width:120%" placeholder="Enter new email id" value=""  />
+												</td>
+																	
+											</tr>
+                        				
+										<tr>
+											<th>
+												Batch Type
+											</th>
+											<td>
+												<select id="select1"  class="validate[required]" ng-model="employee.empLocation" style="width:120%"  >
+													<option value="null">----Select-----</option>
+                                        			<option value="Technical">Technical</option>
+                                        			<option value="softskill">Soft Skill</option>
+                                        			
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												Batch Location
+											</th>
+											<td>
+												<select id="select1"  class="validate[required]" ng-model="employee.empLocation" style="width:120%"  >
+													<option value="null">----Select-----</option>
+                                        			<option value="pune">Pune</option>
+                                        			<option value="hyderabad">Hyderabad</option>
+                                        			<option value="gandhinagar">Gandinagar</option>
+
+												</select>
+											</td>
+										</tr>
+										<tr>
+												<th>
+														Batch Technology
+												</th>
+												<td>
+													<input type="radio" name="technology" value="java"> Java<br>
+  													<input type="radio" name="technology" value="php">Php<br>
+  													<input type="radio" name="technology" value="angularjs">Angular Js<br>
+												</td>
+																	
+											</tr>
+										<tr>
+											<th>
+												&nbsp;
+											</th>
+											<td>
+												<input id="Submit1" type="submit" value="Sumbit"  />
+												<input id="Reset1" type="reset" value="Reset" onclick="this.form.clear();" />
+											</td>
+										</tr>
+										
+									</table>
+								</form>
+							</div>
+							</div>
+						</div>	
+			
+						<div class="grid_28 omega">
+						
+							<div class="padding_20 text-justify" ng-controller="">
+								<form ng-submit="myMethod()">
+									<table class="form-table" style="width:auto">
+									
+
+                        					<tr>
+                        						<td><input type="hidden" ng-model="batch.batchId"></td>
+                        					</tr>
+                        					<tr>
+												<th>
+														Session Name
+												</th>
+												<td>
+													<input id="batchname" type="text"  class="validate[required]" ng-model="employee.empName" style="width:120%" placeholder="Enter Employee Name" value=""  />
+												</td>
+																	
+											</tr>
+											
+												<tr>
+												<th>
+														Batch Start Date
+												</th>
+												<td>
+													<input id="batchstartdate" type="date"  class="validate[required]" ng-model="employee.empEmailId" style="width:120%" placeholder="Enter new email id" value=""  />
+												</td>
+																	
+											</tr>
+												<tr>
+												<th>
+														Batch End Date
+												</th>
+												<td>
+													<input id="batchenddate" type="date"  class="validate[required]" ng-model="employee.empEmailId" style="width:120%" placeholder="Enter new email id" value=""  />
+												</td>
+																	
+											</tr>
+                        				
+										<tr>
+											<th>
+												Batch Type
+											</th>
+											<td>
+												<select id="select1"  class="validate[required]" ng-model="employee.empLocation" style="width:120%"  >
+													<option value="null">----Select-----</option>
+                                        			<option value="Technical">Technical</option>
+                                        			<option value="softskill">Soft Skill</option>
+                                        			
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												Batch Location
+											</th>
+											<td>
+												<select id="select1"  class="validate[required]" ng-model="employee.empLocation" style="width:120%"  >
+													<option value="null">----Select-----</option>
+                                        			<option value="pune">Pune</option>
+                                        			<option value="hyderabad">Hyderabad</option>
+                                        			<option value="gandhinagar">Gandinagar</option>
+
+												</select>
+											</td>
+										</tr>
+										<tr>
+												<th>
+														Batch Technology
+												</th>
+												<td>
+													<input type="radio" name="technology" value="java"> Java<br>
+  													<input type="radio" name="technology" value="php">Php<br>
+  													<input type="radio" name="technology" value="angularjs">Angular Js<br>
+												</td>
+																	
+											</tr>
+										<tr>
+											<th>
+												&nbsp;
+											</th>
+											<td>
+												<input id="Submit1" type="submit" value="Sumbit"  />
+												<input id="Reset1" type="reset" value="Reset" onclick="this.form.clear();" />
+											</td>
+										</tr>
+										
+									</table>
+								</form>
+							</div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+
+		<!-- CONTENTS END -->

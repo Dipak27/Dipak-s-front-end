@@ -1,0 +1,77 @@
+
+Nov 09, 2016 14:37:52.81 NEW SESSION
+Nov 09, 2016 14:37:52.81 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:37:52.87 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 14:37:55.81 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:39:07.69 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:39:07.75 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 14:39:10.10 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:40:10.27 1478682610268	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+Nov 09, 2016 14:41:43.67 [Child 6156] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Nov 09, 2016 14:42:16.67 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:42:16.73 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 14:42:19.09 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:47:37.46 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:47:37.52 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 14:47:39.86 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:49:22.86 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 14:49:22.91 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 14:49:25.25 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 15:05:15.92 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 15:05:15.98 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 15:05:18.35 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 15:19:15.82 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 15:19:15.91 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 15:19:18.40 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 15:52:03.31 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 15:52:03.37 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 15:52:05.83 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 19:43:13.68 [Child 5360] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Nov 09, 2016 19:43:27.96 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 19:43:28.04 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 19:43:32.26 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 19:51:03.84 [Child 6120] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Nov 09, 2016 19:51:03.86 [Child 6120] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Nov 09, 2016 19:51:11.76 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 19:51:11.87 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 19:51:14.35 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 21:25:11.41 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 21:25:11.47 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 21:25:14.12 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 21:47:07.65 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 21:47:07.71 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 09, 2016 21:47:10.32 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 09, 2016 23:37:39.02 [Child 2976] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Nov 09, 2016 23:37:39.09 
+Nov 09, 2016 23:37:39.09 ###!!! [Parent][MessageChannel] Error: (msgtype=0x2C007A,name=PBrowser::Msg_Destroy) Closed channel: cannot send/recv
+Nov 09, 2016 23:37:39.09 
+Nov 09, 2016 23:37:39.40 
+Nov 09, 2016 23:37:39.40 ###!!! [Child][MessageChannel] Error: (msgtype=0x2C0001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Nov 09, 2016 23:37:39.40 
+Nov 09, 2016 23:37:39.87 [Child 2976] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Nov 09, 2016 23:37:40.02 
+Nov 09, 2016 23:37:40.02 ###!!! [Child][MessageChannel] Error: (msgtype=0x2C0001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Nov 09, 2016 23:37:40.02 
+Nov 09, 2016 23:37:40.03 
+Nov 09, 2016 23:37:40.03 ###!!! [Child][MessageChannel] Error: (msgtype=0x2C0001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+Nov 09, 2016 23:37:40.03 
+Nov 09, 2016 23:37:40.25 
+Nov 09, 2016 23:37:40.25 ###!!! [Child][MessageChannel] Error: (msgtype=0x7,name=PAPZ::Msg_UpdateZoomConstraints) Closed channel: cannot send/recv
+Nov 09, 2016 23:37:40.25 
+
+Nov 10, 2016 09:03:31.01 NEW SESSION
+Nov 10, 2016 09:03:31.01 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 10, 2016 09:03:31.08 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 10, 2016 09:03:34.19 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+
+Nov 10, 2016 14:39:36.87 NEW SESSION
+Nov 10, 2016 14:39:36.87 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 10, 2016 14:39:36.92 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 10, 2016 14:39:40.04 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 10, 2016 14:40:38.45 1478769038453	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+
+Nov 10, 2016 15:57:52.70 NEW SESSION
+Nov 10, 2016 15:57:52.70 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 10, 2016 15:57:52.75 [GFX1-]: VendorIDMismatch V 0x8086 0x1414
+Nov 10, 2016 15:57:56.05 [GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+Nov 10, 2016 15:58:55.00 1478773734997	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error

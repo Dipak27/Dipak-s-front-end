@@ -1,0 +1,19 @@
+var mainApp = angular.module('mainApp',[]);
+mainApp.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.         
+    when('/login1', {
+       templateUrl: 'login.jsp',
+       controller: 'loginController'
+    }).
+    when('/trainingprogram1', {
+        templateUrl: 'trainingprogram.jsp',
+        controller: 'trainingprogramController'
+     }).
+     when('/help1', {
+         templateUrl: 'help.jsp',
+         controller: 'helpController'
+      }).
+    otherwise({
+       redirectTo: '/login.jsp'
+    });
+ }]);

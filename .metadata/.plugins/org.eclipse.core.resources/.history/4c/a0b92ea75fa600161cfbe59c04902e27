@@ -1,0 +1,10 @@
+<div>
+	<form>
+
+		<span>Enter Student Name : <input type="text" ng-model="student.name" /></span><br/>
+		<span>Enter City : <input type="text" ng-model="student.city" /></span><br/>
+		<span>Enter Age : <input type="text" ng-model="student.age" /></span><br/>
+		<button ng-click="addStudent()">Add Student</button>
+	
+	</form>
+</div>

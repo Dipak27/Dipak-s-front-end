@@ -1,0 +1,33 @@
+  
+      mainApp.config(['$routeProvider', function($routeProvider) {
+          $routeProvider.
+          
+          when('/index', {
+             templateUrl: 'index.jsp',
+             controller: 'indexController'
+          }).
+          
+          when('/login', {
+             templateUrl: 'login.jsp',
+             controller: 'loginController'
+          }).
+          when('/trainingprogram', {
+              templateUrl: 'trainingprogram.jsp',
+              controller: 'trainingprogramController'
+           }).
+           when('/help', {
+               templateUrl: 'help.jsp',
+               controller: 'helpController'
+            }).
+          otherwise({
+             redirectTo: '/addStudent'
+          });
+       }]);
+      
+      mainApp.controller('indexController', function($scope) {
+         
+       });
+       
+       mainApp.controller('ViewStudentsController', function($scope) {
+          
+       });

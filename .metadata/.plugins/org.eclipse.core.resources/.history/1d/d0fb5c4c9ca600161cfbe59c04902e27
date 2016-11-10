@@ -1,0 +1,129 @@
+	<!-- CONTENTS START -->
+	
+	<script>
+	mainApp.controller('myCtrl', function($scope, $http) {
+		$scope.msg="hello";
+		$scope.employee={empId:null,empEmailId:"",empName:"",empLocation:""};
+		$scope.fetchData=function()
+		{
+			 $http.get("http://localhost:8808/TrainingManagementSystem/employee/list")
+			  .then(function(response) {
+				  alert("response called...");
+			      $scope.myWelcome = response.data;
+			  });	
+		}
+		 $scope.myMethod=function(){
+			alert("method called...");
+			 $http.post("http://localhost:8808/TrainingManagementSystem/employee/create/",$scope.employee)
+			  .then(function(response) {
+				  alert("response called...");
+				  $scope.fetchData();
+			      $scope.myWelcome = response.data;
+			  });
+		}  
+		
+	 
+	});
+	
+	</script>
+		<div class="container_24">
+			<div class="grid_24">
+				<div class="contents">
+					<div class="padding_20">
+						
+					</div>
+						<div class="grid_6 alpha">
+							<div class="padding_20">
+								<div class="accordion nav-sidebar">
+									<h3>Batch</h3>
+										<div>
+											<ul>
+													<li><a href="#batchcreate">Create Batch</a></li>
+													<li><a href="#batchview">View Batch</a></li>
+													<li><a href="#batchsearch">Search Batch</a></li>
+								
+								
+											</ul>
+										</div>
+										
+								</div>
+							</div>
+						</div>	
+			
+						<div class="grid_18 omega">
+						 &nbsp;&nbsp;<h2>Trainer Registration</h2>
+							<div class="padding_20 text-justify" ng-controller="myCtrl">
+								<form ng-submit="myMethod()">
+									<table class="form-table" style="width:auto">
+									
+
+                        					<tr>
+                        						<td><input type="hidden" ng-model="employee.empId"></td>
+                        					</tr>
+                        					<tr>
+												<th>
+														Trainer Name
+												</th>
+												<td>
+													<input id="employeename" type="text"  class="validate[required]" ng-model="employee.empName" style="width:120%" placeholder="Enter Employee Name" value=""  />
+												</td>
+																	
+											</tr>
+											
+												<tr>
+												<th>
+														Trainer emailId
+												</th>
+												<td>
+													<input id="employeeemail" type="text"  class="validate[required]" ng-model="employee.empEmailId" style="width:120%" placeholder="Enter new email id" value=""  />
+												</td>
+																	
+											</tr>
+                        					<tr>
+												<th>
+														Trainer Technology
+												</th>
+												<td>
+													<input type="checkbox" name="technology" value="java"> Java<br>
+  													<input type="checkbox" name="technology" value="php">Php<br>
+  													<input type="checkbox" name="technology" value="angularjs">Angular Js<br>
+												</td>
+																	
+											</tr>
+										<tr>
+											<th>
+												Employee Job Location
+											</th>
+											<td>
+												<select id="select1"  class="validate[required]" ng-model="employee.empLocation" style="width:120%"  >
+													<option value="null">----Select-----</option>
+                                        			<option value="pune">Pune</option>
+                                        			<option value="hyderabad">Hyderabad</option>
+                                        			<option value="gandhinagar">Gandinagar</option>
+
+												</select>
+											</td>
+										</tr>
+										
+										<tr>
+											<th>
+												&nbsp;
+											</th>
+											<td>
+												<input id="Submit1" type="submit" value="Sumbit"  />
+												<input id="Reset1" type="reset" value="Reset" onclick="this.form.clear();" />
+											</td>
+										</tr>
+										
+									</table>
+								</form>
+							</div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+
+		<!-- CONTENTS END -->

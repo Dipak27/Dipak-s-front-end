@@ -1,0 +1,31 @@
+  
+     mainApp.config(['$routeProvider', function($routeProvider) {
+          $routeProvider.         
+          when('/login', {
+             templateUrl: 'login.jsp',
+             controller: 'loginController'
+          }).
+          when('/trainingprogram', {
+              templateUrl: 'trainingprogram.jsp',
+              controller: 'trainingprogramController'
+           }).
+           when('/help', {
+               templateUrl: 'help.jsp',
+               controller: 'helpController'
+            }).
+          otherwise({
+             redirectTo: '/login.jsp'
+          });
+       }]);
+      
+    
+       
+       mainApp.controller('loginController', function($scope) {
+          
+       });
+       mainApp.controller('trainingprogramController', function($scope) {
+           
+       });
+       mainApp.controller('helpController', function($scope) {
+           
+       });*/

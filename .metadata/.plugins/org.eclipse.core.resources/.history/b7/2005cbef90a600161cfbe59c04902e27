@@ -1,0 +1,98 @@
+<!-- CONTENTS START -->
+	<div class="container_24">
+			<div class="grid_24">
+				<div class="contents">
+					<div class="padding_20">
+						<h2> Book Management</h2>
+					</div>
+						<div class="grid_6 alpha">
+							<div class="padding_20">
+								<div class="accordion nav-sidebar">
+									<h3>Book</h3>
+										<div>
+												
+										
+											<ul>
+												<li><a href="UserIndex.jsp">Add Book</a></li>
+												<li><a href="RemoveBook.jsp">Remove Book </a></li>
+												
+												
+											</ul>
+										</div>
+									
+								
+									<h3>Account</h3>
+										<div>
+											<ul>
+												<li><a href="userprofile.jsp">Admin Profile</a></li>
+												<li><a href="userchangepassword.jsp">Change Password</a></li>
+												
+											</ul>
+										</div>
+									
+									
+								</div>
+							</div>
+						</div>	
+			
+						<div class="grid_18 omega">
+						 
+							<div class="padding_20 text-justify">
+								<form id="frmMain" action="AddBooksDetails" method="get">
+									<table class="form-table" style="width:auto">
+									
+										
+										<table border='0' width='100%' class='table11'>
+										<tr>
+											<td>Book Name</td>
+											<td><input type="text" name="title" placeholder="Enter Book Title here"/></td>
+										</tr>
+										<tr>
+											<td>Author</td>
+											<td><input type="text" name="author" placeholder="Enter author name"/></td>
+											
+										</tr>
+										<tr>
+											<td>Pages</td>
+											<td><input type="text" name="pages" placeholder="Number of pages"/></td>
+											
+										</tr>
+										<tr>
+											<td>Publication</td>
+											<td><input type="text" name="publication" placeholder="Enter book's publication"/></td>					
+											
+										</tr>
+										<tr>
+											<td>Edition</td>
+									<td><input type="text" name="edition" placeholder="Enter book's edition"/></td>		
+										</tr>
+										<tr>
+											<td>Genre</td>
+										<td><input type="text" name="genre" placeholder="Enter book's genre"/></td>	
+										</tr>
+										<tr>
+											<td>Price</td>
+										<td><input type="text" name="Price" placeholder="Enter Book's Price"/></td>	
+										</tr>
+										<tr>
+											<td><input type="submit" value="Add"/></td>
+											<td></td>
+											
+										</tr>
+										</table>
+									
+											
+									</table>
+								</form>		
+								
+							</div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+		
+
+		<!-- CONTENTS END -->
